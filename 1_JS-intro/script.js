@@ -1,0 +1,1 @@
+console.log("hey Brainzima i am external console")
