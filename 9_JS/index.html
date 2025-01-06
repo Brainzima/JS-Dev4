@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 500px;
+            height: 500px;
+            border: 5px solid red;
+        }
+
+        .active {
+            background: linear-gradient(blue, yellow, green, red);
+            transition: 1s;
+        }
+
+        .rounded {
+            border-radius: 50%;
+            transition: .6s;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container name goon">
+
+    </div>
+    <button onclick="addClass()">AddClass</button>
+    <button onclick="remClass()">RemoveClass</button>
+    <button onclick="roundedFunc()">Rounded</button>
+
+
+    <script>
+        function addClass() {
+
+            //    show class list
+            //    a = document.querySelector('.container').classList
+            //    console.log(a)
+
+            document.querySelector('.container').classList.add("active")
+        }
+        function remClass() {
+
+            document.querySelector('.container').classList.remove("active")
+        }
+        function roundedFunc() {
+
+            document.querySelector('.container').classList.add("rounded")
+        }
+
+    </script>
+</body>
+
+</html>
