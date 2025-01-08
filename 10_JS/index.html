@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID Card Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="main">
+
+     <!-- form start -->
+     <div class="form-container">
+        <img src="https://brainzima.com/assets/img/logo-brainzima-icon.png" class="logo" alt="">
+        <h2 class="title">Form</h2>
+        <input type="text" placeholder="Name" id="name" class="infield">
+        <input type="text" placeholder="Regd No" id="regd" class="infield">
+        <input type="text" placeholder="Course" id="course" class="infield">
+        <input type="text" placeholder="Photo URL" id="purl" class="infield">
+        <br>
+        <button class="btn" onclick="genCard()">Generate</button>
+     </div>
+    <!-- form end -->
+
+     <!-- mid start -->
+     <div class="mid-container">
+        <img src="https://i.pinimg.com/originals/45/e4/79/45e479ae0f8355a254862992bac33f5b.gif" alt="">
+     </div>
+     <!-- mid end -->
+
+    <!-- id card start -->
+     <div class="card-container">
+
+        <div class="card">
+            <h2 class="title">ID Card</h2>
+            <img src="https://via.placeholder.com/150" alt="" class="photu" id="photu">
+            <p class="info" id="regdv">Regd No</p>
+            <p class="info" id="namev">Name</p>
+            <p class="info" id="coursev">Course</p>
+            <img src="https://quickchart.io/qr?text=Brainzima&size=150" alt="" class="qr" id="qr">
+        </div>
+
+     </div>
+    <!-- id card end -->
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
