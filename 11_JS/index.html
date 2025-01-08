@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gpay QR Code Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="main">
+
+     <!-- form start -->
+     <div class="form-container">
+        <img src="https://brainzima.com/assets/img/logo-brainzima-icon.png" class="logo" alt="">
+        <h2 class="title">Form</h2>
+        <input type="text" placeholder="Name" id="bname" class="infield">
+        <input type="text" placeholder="UPI ID" id="upi" class="infield">
+        <br>
+        <button class="btn" onclick="genCard()">Generate</button>
+     </div>
+    <!-- form end -->
+
+     <!-- mid start -->
+     <div class="mid-container">
+        <img src="https://i.pinimg.com/originals/45/e4/79/45e479ae0f8355a254862992bac33f5b.gif" alt="">
+     </div>
+     <!-- mid end -->
+
+    <!-- id card start -->
+     <div class="card-container">
+
+        <div class="card">
+            <div class="head">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+                <div class="four"></div>
+            </div>
+            <div class="glogo">
+                <img src="https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/436/Google_Pay_GPay_Logo-512.png" alt="">
+            </div>
+            <h2 class="bname" id="bnamev">ABC Business Pvt Ltd</h2>
+            <img src="https://quickchart.io/qr?text=upi://pay?pa=7979864304@okbizaxis&size=350" alt="" class="qr" id="qr">
+            <p class="upi-id">UPI ID : <span id="upiv">7979797979@upi</span> </p>
+            <div class="imgl1">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/6/65/BHIM_SVG_Logo.svg/2560px-BHIM_SVG_Logo.svg.png" alt="">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/1200px-UPI-Logo-vector.svg.png" alt="">
+            </div>
+            <div class="imgl2">
+                <img src="https://cdn1.iconfinder.com/data/icons/logos-brands-in-colors/436/Google_Pay_GPay_Logo-512.png" alt="">
+                <img src="https://www.logo.wine/a/logo/Paytm/Paytm-Logo.wine.svg" alt="">
+                <img src="https://cdn.worldvectorlogo.com/logos/phonepe-1.svg" alt="">
+            </div>
+        </div>
+
+     </div>
+    <!-- id card end -->
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
