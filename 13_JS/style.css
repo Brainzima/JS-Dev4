@@ -1,0 +1,12 @@
+body{
+    background: gray;
+}
+.container{
+    width: 50vw;
+    height: 50vh;
+    background-color: antiquewhite;
+    margin: auto;
+}
+.green{
+    background-color: green;
+}
