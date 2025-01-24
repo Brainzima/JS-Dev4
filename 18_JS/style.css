@@ -1,0 +1,72 @@
+body{
+    background: grey;   
+}
+.container{
+    width: 60vw;
+    height: 80vh;
+    background-color: antiquewhite;
+    margin: auto;
+    border-radius: 25px;
+}
+.pillar{
+    height: 600px;
+    width: 30px;
+    background-color: blue;
+    position: absolute;
+    bottom: 175px;
+    left: 540px;
+}
+.board{
+    height: 200px;
+    width: 500px;
+    background-color: rgb(42, 31, 70);
+    position: absolute;
+    margin-top: 150px;
+    margin-left: 170px;
+    display: flex;
+}
+.light{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+.divider{
+    width: 1px;
+    height: 100px;
+    background-color: rgb(117, 109, 109);
+    margin-left: 20px;
+    margin-top: 50px;
+}
+.info{
+    margin-left: 20px;
+    margin-top: 50px;
+    font-size: 75px;
+    color: white;
+}
+
+.btns{
+    position: absolute;
+    bottom: 200px;
+    right: 500px;
+}
+.btn{
+    width: 100px;
+    height: 30px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+}
+.red{
+    background-color: red;
+    color: white;
+}
+.green{
+    background-color: green;
+    color: white;
+}
+.yellow{
+    background-color: yellow;
+}
