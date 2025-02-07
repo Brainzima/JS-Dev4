@@ -35,6 +35,7 @@ body{
     margin: auto;
     border-radius: 25px;
     font-size: 52px;
+    text-align: right;
 }
 .btns{
     width: 500px;
