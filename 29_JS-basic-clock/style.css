@@ -1,0 +1,32 @@
+body{
+    background-color: gray;
+}
+.container{
+    width: 70vw;
+    height: 70vh;
+    background-color: beige;
+    margin: auto;
+}
+.clock-container{
+    width: 70vw;
+    height: 70vh;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clock{
+    width: 500px;
+    height: 200px;
+    background-color: black;
+    color: white;
+    border-radius: 50px;
+    box-shadow: 5px 5px 10px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.time{
+    font-size: 5rem;
+    font-weight: 700;
+}
