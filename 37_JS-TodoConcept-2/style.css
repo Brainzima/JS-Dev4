@@ -1,0 +1,56 @@
+body{
+    background-color: gray;
+}
+.container{
+    width: 40vw;
+    min-height: 80vh;
+    margin: auto;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.form-area{
+    width: 500px;
+    height: 100px;
+    /* background-color: aqua; */
+    margin: auto;
+}
+.form-area > form > input{
+    margin-top: 30px;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+}
+.form-area > form > button{
+    width: 80px;
+    height: 55px;
+    text-align: center;
+}
+.todos-area{
+    width: 500px;
+    /* background-color: aqua; */
+    margin: auto;
+}
+ol{
+    list-style: none;
+}
+li{
+    color: brown;
+    width: 400px;
+    background-color: antiquewhite;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.delete-all{
+    width: 100px;
+    height: 30px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 10px;
+}
