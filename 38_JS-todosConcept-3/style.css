@@ -1,0 +1,107 @@
+body{
+    background-color: gray;
+}
+.container{
+    width: 40vw;
+    min-height: 80vh;
+    margin: auto;
+    background-color: white;
+    border-radius: 50px;
+}
+
+.form-area{
+    width: 500px;
+    height: 100px;
+    /* background-color: aqua; */
+    margin: auto;
+}
+.form-area > form > input{
+    margin-top: 30px;
+    width: 80%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+}
+.form-area > form > button{
+    width: 80px;
+    height: 55px;
+    text-align: center;
+}
+.todos-area{
+    width: 500px;
+    /* background-color: aqua; */
+    margin: auto;
+}
+ol{
+    list-style: none;
+}
+li{
+    color: brown;
+    width: 400px;
+    background-color: antiquewhite;
+    margin: 5px;
+    padding: 5px;
+    padding-left: 25px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.delete-btn{
+    color: red;
+    border: none;
+    cursor: pointer;
+}
+.edit-btn{
+    color: blue;
+    border: none;
+    cursor: pointer;
+}
+.delete-all{
+    width: 100px;
+    height: 30px;
+    background-color: rebeccapurple;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+/* Claude.ai css for inline edit  */
+/* Styling for the inline edit functionality */
+.edit-input {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex-grow: 1;
+  }
+  
+  .save-btn, .cancel-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+    font-size: 1rem;
+  }
+  
+  .save-btn i {
+    color: green;
+  }
+  
+  .cancel-btn i {
+    color: red;
+  }
+  
+  /* Make li display as flex when in edit mode */
+  #todos li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+  
+  /* Style for the button wrapper */
+  #todos li span {
+    margin-left: auto;
+    display: flex;
+  }
