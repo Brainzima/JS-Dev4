@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NotesApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="header">
+            NotesApp
+        </div>
+        <div class="form-section">
+            <div class="note-input">
+                <textarea id="note-input" rows="6" placeholder="Note...."></textarea>
+            </div>
+            <div class="note-btn">
+                <button onclick="addNote()" id="addNote" type="submit">Submit</button>
+            </div>
+        </div>
+
+        <div class="notes-section" id="notes-section">
+            
+            <!-- note div start  -->
+             <div class="note">
+                <div class="note-header">
+                    <div class="date">01-02-2010</div>
+                    <div class="delete">X</div>
+                </div>
+                <div class="note-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                </div>
+                <div class="note-footer">
+                    <button class="edit-btn">Edit</button>
+                </div>
+             </div>
+            <!-- note div end -->
+
+        </div>
+
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>

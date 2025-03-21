@@ -1,0 +1,65 @@
+body{
+    background-color: gray;
+}
+.container{
+    width: 80vw;
+    height: 95vh;
+    margin: auto;
+    background-color: aqua;
+}
+.header{
+    text-align: center;
+    font-size: 3rem;
+}
+.form-section{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+#note-input{
+    width: 1200px;
+}
+#addNote{
+    height: 96px;
+    width: 96px;
+}
+
+
+
+/* css for notes  */
+.notes-section{
+    width: 1301px;
+    margin: auto;
+}
+.note{
+    width: 250px;
+    min-height: 250px;
+    background-color: white;
+    border-radius: 15px;
+}
+.note-header{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid gray;
+}
+.date{
+    margin: 10px;
+}
+.delete{
+    margin: 10px;
+}
+.note-body{
+    margin: 10px;
+    min-height: 170px;
+    text-align: justify;
+}
+.note-footer{
+    border-top: 1px solid gray;
+    text-align: center;
+
+}
+.edit-btn{
+    border: none;
+    background:none;
+    cursor: pointer;
+}
