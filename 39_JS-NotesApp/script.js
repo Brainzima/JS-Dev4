@@ -10,69 +10,48 @@ function addNote() {
     noteList.push({ note: note, cdate: cdate});
     localStorage.setItem("noteList", JSON.stringify(noteList));
     document.getElementById("note-input").value='';
+    showNotes()
 }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 function showNotes() {
     const notes = document.getElementById("notes-section");
     notes.innerHTML = "";
     noteList.forEach((note, index) => {
-        
+        // create main note div 
+        const noteDiv = document.createElement('div')
+        noteDiv.classList.add('note')
+        // create note header
+        const headerDiv = document.createElement('div')
+        headerDiv.classList.add('note-header')
+        // create header date
+        const dateDiv = document.createElement('div')
+        dateDiv.classList.add('date')
+        const formatedDate = new Date(note.cdate)      
+        dateDiv.textContent=formatedDate.toLocaleDateString()
+        // create  header delete
+        const deleteDiv = document.createElement('div')
+        deleteDiv.classList.add('delete')
+        const deleteBtn = document.createElement('button')
+        deleteBtn.textContent='X'
+        deleteBtn.setAttribute('onclick',`deleteNote(${index})`)
+        // create note body
+        const bodyDiv = document.createElement('div')
+        bodyDiv.classList.add('note-body')
+        bodyDiv.textContent=note.note
+        // create note footer
+        const footerDiv = document.createElement('div')
+        footerDiv.classList.add('note-footer')
+        footerDiv.textContent='Edit'
 
+        headerDiv.appendChild(dateDiv)
+        deleteDiv.appendChild(deleteBtn)
+        headerDiv.appendChild(deleteDiv)
+        noteDiv.appendChild(headerDiv)
+        noteDiv.appendChild(bodyDiv)
+        noteDiv.appendChild(footerDiv)
+        notes.appendChild(noteDiv)
 
-    });
-    document.getElementById("note-input").value = "";
-  }
-
-
-
-
-
-
-
-
-  
-function showNotes() {
-    const notes = document.getElementById("notes-section");
-    notes.innerHTML = "";
-    noteList.forEach((note, index) => {
-      const listItem = document.createElement("li");
-      listItem.textContent = note.note;
-      // btn wrapper 
-      const btnWrapper = document.createElement("span"); 
-      // add delete btn 
-      const deleteButton = document.createElement("button");
-      deleteButton.innerHTML = "<i class='fa fa-trash'></i>";      
-      deleteButton.setAttribute("onclick", `deleteTodo(${index})`);
-      deleteButton.setAttribute("class", "delete-btn");
-      // edit btn 
-      const editButton = document.createElement("button");
-      editButton.innerHTML = "<i class='fa fa-edit'></i>";      
-      editButton.setAttribute("onclick", `editTodo(${index})`);
-      editButton.setAttribute("class", "edit-btn");
-
-      notes.appendChild(listItem);
-      listItem.appendChild(btnWrapper);
-      btnWrapper.appendChild(editButton);
-      btnWrapper.appendChild(deleteButton);
     });
     document.getElementById("note-input").value = "";
   }
@@ -102,13 +81,13 @@ document.getElementById('todo-form').addEventListener("submit",function(e){
 // to add by enter button function endf 
 
 
-// to delete single todo function start 
-function deleteTodo(index) {
-    todoList.splice(index, 1);
-    localStorage.setItem("todoList", JSON.stringify(todoList));
-    showTodos()
+// to delete single note function start 
+function deleteNote(index) {
+    noteList.splice(index, 1);
+    localStorage.setItem("noteList", JSON.stringify(noteList));
+    showNotes()
   }
-// to delete single todo function end
+// to delete single note function end
 
 
 // Edit todo function start

@@ -3,7 +3,7 @@ body{
 }
 .container{
     width: 80vw;
-    height: 95vh;
+    min-height: 95vh;
     margin: auto;
     background-color: aqua;
 }
@@ -30,6 +30,9 @@ body{
 .notes-section{
     width: 1301px;
     margin: auto;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 .note{
     width: 250px;
